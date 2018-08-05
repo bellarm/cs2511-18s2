@@ -15,6 +15,7 @@ public class StringExample {
 		message = message + "]";
 		System.out.println(message);
 		
+		// Same example, but using StringBuilder.
 		StringBuilder sBuilder = new StringBuilder("It is pouring like cats and dogs outside");
 		sBuilder.append("and the lightining struck [");
 		for (int i = 0; i <= 11; i++) {		

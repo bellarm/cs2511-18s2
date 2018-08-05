@@ -6,23 +6,45 @@ public class Employee {
 	private String name;
 	private float salary;
 	
+	/**
+	 * Constructor with 2 arguments.
+	 * 
+	 * @param name		name of employee.
+	 * @param salary	salary in float.
+	 */
 	public Employee(String name, float salary) {
 		this.name = name;
 		this.salary = salary;
 	}
 	
+	
+	/**
+	 * @return name
+	 */
 	public String getName() {
 		return name;
 	}
 	
+	/**
+	 * 
+	 * @param name
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 	
+	/**
+	 * 
+	 * @return salary
+	 */
 	public float getSalary() {
 		return salary;
 	}
 	
+	/**
+	 * 
+	 * @param salary
+	 */
 	public void setSalary(float salary) {
 		if (salary < 0) {
 			return;
@@ -48,6 +70,7 @@ public class Employee {
 	}
 	
 	public String toString() {
+		// If want to return a string:
 		//return "Employee name: " + name;
 		return getClass().getName();
 	}
