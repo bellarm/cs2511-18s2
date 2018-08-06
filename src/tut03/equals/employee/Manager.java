@@ -36,5 +36,19 @@ public class Manager extends Employee {
 	public String toString() {
 		return "Manager name: " + getName();
 	}
+	
+
+	public boolean equals(Object obj) {
+		if (!obj.getClass().equals(this.getClass())) {
+			return false;
+		}
+
+		Manager manager = (Manager) obj;
+		if (super.equals(obj) 
+				&& this.hireDate.equals(manager.hireDate)) {
+			return true;
+		}
+		return false;
+	}
 
 }

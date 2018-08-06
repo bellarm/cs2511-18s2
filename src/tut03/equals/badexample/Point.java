@@ -19,8 +19,12 @@ public class Point {
 	 *  The equals() method in the Object class takes in a paramter of type Object
 	 *  This is a very common mistake made in the implementation of equals()
 	 */
-	public boolean equals(Point obj) {
-		if ((this.x == obj.x) && (this.y == obj.y)) {
+	public boolean equals(Object obj) {
+		if (!obj.getClass().equals(this.getClass())) {
+			return false;
+		}
+		Point point = (Point) obj;
+		if ((this.x == point.x) && (this.y == point.y)) {
 			return true;
 		}
 		return false;

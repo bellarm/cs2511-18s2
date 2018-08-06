@@ -21,5 +21,6 @@ public class TestAccess {
 	    System.out.println("---");
 		D objD = new D();
 		objD.methodD();
+		objD.methodD2();
 	}
 }
