@@ -5,6 +5,7 @@ import tut03.access.package1.A;
 import tut03.access.package1.B;
 import tut03.access.package1.C;
 import tut03.access.package2.D;
+import tut03.access.package2.E;
 
 public class TestAccess {
 	
@@ -21,6 +22,8 @@ public class TestAccess {
 	    System.out.println("---");
 		D objD = new D();
 		objD.methodD();
-		objD.methodD2();
+	    System.out.println("---");
+		E objE = new E();
+		objE.methodE();
 	}
 }

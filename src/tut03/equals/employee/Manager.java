@@ -44,7 +44,7 @@ public class Manager extends Employee {
 		}
 
 		Manager manager = (Manager) obj;
-		if (super.equals(obj) 
+		if (super.equals(obj)
 				&& this.hireDate.equals(manager.hireDate)) {
 			return true;
 		}

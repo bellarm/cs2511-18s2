@@ -2,7 +2,7 @@ package tut03.access.package2;
 
 import tut03.access.package1.A;
 
-public class D extends A {
+public class D {
 
 	public void methodD() {
 		// A class D in another package to a class A 
@@ -21,10 +21,5 @@ public class D extends A {
 //		The line below does not compile because 
 //		this do not have access to private variables in super class
 //		System.out.println("varPriv: " + varPriv);
-	}
-	
-	public void methodD2() {
-		System.out.println("varPro: " +varPro);
-		System.out.println("var: " + var);
 	}
 }
