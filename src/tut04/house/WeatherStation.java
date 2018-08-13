@@ -10,4 +10,8 @@ public class WeatherStation {
 	public Thermometer getThermometer() {
 		return this.thermometer;
 	}
+	
+	public float getTemperature() {
+		return thermometer.getTemperature();
+	}
 }

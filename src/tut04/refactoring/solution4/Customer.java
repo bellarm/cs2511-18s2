@@ -32,7 +32,8 @@ public class Customer {
 		
 		for (Rental r: rentals) {
 			//show figures for this rental
-			result += "\t" + r.getMovie().getTitle() + "\t" + 	String.valueOf(r.getCharge()) + "\n";
+			result += "\t" + r.getMovie().getTitle() + "\t" + 	
+					String.valueOf(r.getCharge()) + "\n";
 		}
 
 		//add footer lines

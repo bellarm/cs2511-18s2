@@ -7,10 +7,10 @@ public class Employee {
 	private float salary;
 	
 	/**
-	 * Constructor with 2 arguments.
+	 * Constructor with 2 arguments
 	 * 
-	 * @param name		name of employee.
-	 * @param salary	salary in float.
+	 * @param name		name of employee
+	 * @param salary	salary in float
 	 */
 	public Employee(String name, float salary) {
 		this.name = name;

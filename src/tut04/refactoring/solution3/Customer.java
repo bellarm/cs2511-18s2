@@ -36,7 +36,8 @@ public class Customer {
 			//show figures for this rental
 			// Refactoring technique 3: Replace temp with Query (getting rid of temporary variables)
 			// Pay a little performance price but let's optimize calculateRental() in rental class later
-			result += "\t" + r.getMovie().getTitle() + "\t" + 	String.valueOf(this.getCharge(r)) + "\n";
+			result += "\t" + r.getMovie().getTitle() + "\t" + 	
+						String.valueOf(this.getCharge(r)) + "\n";
 			totalAmount += this.getCharge(r);
 			
 		}

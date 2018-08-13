@@ -28,24 +28,7 @@ public class Customer {
 		String result = "Rental Record for " + getName() + "\n";
 		
 		for (Rental r: rentals) {
-			double thisAmount = 0;
-			int priceCode = r.getMovie().getPriceCode();
-
-			switch (priceCode) {
-				case Movie.REGULAR:
-					thisAmount += 2;
-					if (r.getDaysRented() > 2)
-						thisAmount += (r.getDaysRented() - 2) * 1.5;
-				break;
-				case Movie.NEW_RELEASE:
-					thisAmount += r.getDaysRented() * 3;
-				break;
-				case Movie.CHILDRENS:
-					thisAmount += 1.5;
-					if (r.getDaysRented() > 3)
-						thisAmount += (r.getDaysRented() - 3) * 1.5;
-				break;
-			}
+			double thisAmount = r.calcRental();
 			
 			//show figures for this rental
 			result += "\t" + r.getMovie().getTitle() + "\t" + 	String.valueOf(thisAmount) + "\n";
@@ -57,7 +40,7 @@ public class Customer {
 		result += "Amount owed is " + String.valueOf(totalAmount) +	"\n";
 		return result;
 	}
-	
+
 	public static void main(String[] args) {
 		Customer c1 = new Customer("Mary Jane Watson");
 		Movie  m = new Movie("Gone with the wind",Movie.REGULAR);

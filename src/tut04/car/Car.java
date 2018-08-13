@@ -7,9 +7,9 @@ public class Car {
 	 */
 	private Engine engine;
 	
-	public Car() {
+	public Car(Engine engine) {
 		// initialise engine
-		engine = new Engine();
+		this.engine = engine;
 	}
 	
 	/*
