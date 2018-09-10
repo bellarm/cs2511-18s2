@@ -2,6 +2,7 @@
 
 ## Composite Pattern
 ![](img/01.png)
+
 Composite pattern is useful when you have a structure like tree, and have components, and you want to treat it as a single object.
 
 Example: File directories
@@ -15,6 +16,7 @@ Components:
 
 ## Decorator Pattern
 ![](img/02.png)
+
 To extend (decorate), the functionality of an object statically or dynamically.
 
 Example: from lecture slides
@@ -27,8 +29,8 @@ Example: from lecture slides
 
 ## Observer Pattern
 ![](img/03.gif)
-When certain objects need to be informed about changes in an object.
 
+When certain objects need to be informed about changes in an object.
 
 ## Model View Controller
 ![](img/04.png)
