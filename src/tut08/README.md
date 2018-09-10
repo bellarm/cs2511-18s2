@@ -34,3 +34,7 @@ When certain objects need to be informed about changes in an object.
 
 ## Model View Controller
 ![](img/04.png)
+
+- Model: data, state  
+- View: presentation layer
+- Controller: connect the Model with View, takes in input and updates model and controls view
