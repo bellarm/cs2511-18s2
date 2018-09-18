@@ -37,7 +37,6 @@ public class Main extends Application {
 		scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
 			@Override
 			public void handle(KeyEvent event) {
-				// 
 				switch (event.getCode()) {
 				case UP:
 					move(0, -1);
@@ -74,10 +73,8 @@ public class Main extends Application {
 		double y = cy + characterNode.getLayoutY() + dy;
 
 		// Move the character if doesn't go outside the stage
-		if (x - cx >= 0 &&
-				x + cx <= WIDTH &&
-				y - cy >= 0 &&
-				y + cy <= HEIGHT) {
+		if (x - cx >= 0 && x + cx <= WIDTH &&
+				y - cy >= 0 && y + cy <= HEIGHT) {
 			characterNode.relocate(x - cx, y - cy);
 		}
 	}
