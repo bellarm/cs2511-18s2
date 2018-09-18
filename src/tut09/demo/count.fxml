@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.102"
+	xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Pane prefHeight="200.0" prefWidth="200.0">
+			<children>
+				<Label layoutX="19.0" layoutY="6.0"
+					text="This is a counting screen" />
+				<Button fx:id="backButton" layoutX="14.0" layoutY="160.0"
+					mnemonicParsing="false" onAction="#handleBackButton"
+					text="Go back to start screen" />
+				<Button fx:id="plusButton" layoutX="110.0" layoutY="100.0"
+					mnemonicParsing="false" onAction="#handlePlusButton" text="+" />
+				<Button fx:id="minusButton" layoutX="66.0" layoutY="100.0"
+					mnemonicParsing="false" onAction="#handleMinusButton" text="-" />
+				<TextField fx:id="numberField" layoutX="14.0"
+					layoutY="46.0" />
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>
